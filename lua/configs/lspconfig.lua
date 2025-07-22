@@ -21,18 +21,18 @@ vim.lsp.config.pyright = {
   capabilities = capabilities,
   cmd = { "pyright-langserver", "--stdio" },
   filetypes = { "python" },
-  root_dir = function(fname)
-    return require("lspconfig.util").root_pattern("pyproject.toml", "setup.py", ".git")(fname)
-  end,
-  settings = {
-    python = {
-      analysis = {
-        typeCheckingMode = "off",
-        autoSearchPaths = true,
-        useLibraryCodeForTypes = true,
-      },
-    },
-  },
+  -- root_dir = function(fname)
+  --   return require("lspconfig.util").root_pattern("pyproject.toml", "setup.py", ".git")(fname)
+  -- end,
+  -- settings = {
+  --   python = {
+  --     analysis = {
+  --       typeCheckingMode = "off",
+  --       autoSearchPaths = true,
+  --       useLibraryCodeForTypes = true,
+  --     },
+  --   },
+  -- },
 }
 
 vim.lsp.config.ts_ls = {

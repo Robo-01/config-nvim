@@ -57,6 +57,13 @@ return {
   },
 
   {
+    "L3MON4D3/LuaSnip",
+    dependencies = {
+      "rafamadriz/friendly-snippets",
+    },
+  },
+
+  {
     "nvim-tree/nvim-web-devicons",
     lazy = false,
     opts = require("utils.devicons"),

@@ -4,6 +4,9 @@ require("nvchad.mappings")
 
 local map = vim.keymap.set
 
+-- Remove ^M (Windows line endings)
+map("n", "<leader>cr", [[:%s/\r//g<CR>]], { desc = "Remove ^M (Windows line endings)" })
+
 -- map("n", ";", ":", { desc = "CMD enter command mode" })
 map({ "n", "v", "t" }, "H", "<C-u>zz", { desc = "Move up" })
 map({ "n", "v", "t" }, "L", "<C-d>zz", { desc = "Move down" })

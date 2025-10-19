@@ -8,9 +8,9 @@ local map = vim.keymap.set
 map("n", "<leader>cr", [[:%s/\r//g<CR>]], { desc = "Remove ^M (Windows line endings)" })
 
 -- map("n", ";", ":", { desc = "CMD enter command mode" })
-map({ "n", "v", "t" }, "H", "<C-u>zz", { desc = "Move up" })
-map({ "n", "v", "t" }, "L", "<C-d>zz", { desc = "Move down" })
-map({ "n", "v", "t" }, "G", "Gzz", { desc = "Move down" })
+map({ "n", "v" }, "H", "<C-u>zz", { desc = "Move up" })
+map({ "n", "v" }, "L", "<C-d>zz", { desc = "Move down" })
+map({ "n", "v" }, "G", "Gzz", { desc = "Move down" })
 
 map("n", "<leader>mv", "<C-v>", { desc = "Multi line visual mode" })
 map("i", "jk", "<ESC>")
